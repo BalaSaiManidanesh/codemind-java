@@ -11,10 +11,10 @@ class Main
 		{   
 			for(int j=1;j<=n;j++)
 			{
-			    if(i==j)
-				System.out.print("0");
-				else
-                System.out.print("x");
+			 if(i==j || i+j==n+1)
+				System.out.print("x");
+             else
+                System.out.print("0");
 			}
 			System.out.println();
 		}
