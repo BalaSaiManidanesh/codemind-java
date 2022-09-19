@@ -1,28 +1,18 @@
-import java.util.*;
+import java.util.Scanner;
 class Main
 {
-    static void print(int n)
+    public static void main(String args[])
     {
-        int r1=1,r2=1;
-        for (int i=0;i<n;i++)
+        Scanner sc = new Scanner(System.in);
+        int r = sc.nextInt();
+        for (int i= r-1; i>=0 ; i--)
         {
-            for (int j=n-1;j>i;j--)
+            for (int j=0; j<=i; j++)
             {
-                System.out.print(" ");
-            }
-            for (int k=1;k<=r1;k++)
-            {
-                System.out.print(Math.abs(k-r2));
-            }
-             r1+=2;r2++;
-             System.out.println();
-          }
-    }
-    public static void main (String args[])
-    {
-        Scanner sc=new Scanner(System.in);
-        int n;
-        n=sc.nextInt();
-        print(n);
+                System.out.print((char)(65+i)+" ");
+             }
+                System.out.println();
+        }
+                sc.close();
     }
 }
